@@ -1,0 +1,446 @@
+/* S T A R T    G L O B A L    S T Y L E */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --light: #f8f9fa;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Almarai", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--light);
+  color: var(--black);
+  direction: rtl;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: #f8f8f8;
+}
+
+/* E N D    G L O B A L    S T Y L E */
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* S T A R T    H E A D E R    S T Y L E */
+.header .right-area img {
+  max-width: 170px;
+}
+
+.header .left-area img {
+  max-width: 26px;
+}
+
+/* E N D    H E A D E R    S T Y L E */
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* S T A R T    N A V B A R    S T Y L E */
+.nav {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.nav .right-area > .main-menu > li {
+  position: relative;
+}
+
+.nav .right-area > .main-menu > li > a {
+  position: relative;
+  color: var(--black);
+  z-index: 2;
+}
+
+/* MAIN MENU ------------------------------------------------- */
+.nav .right-area > .main-menu > li > a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #444;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.nav .right-area > .main-menu > li > a:hover::before {
+  width: 100%;
+}
+
+.nav .right-area > .main-menu > li > a.logo img {
+  min-width: 80px;
+  max-width: 100px;
+  width: 100%;
+}
+
+nav .middle-area {
+  display: none;
+}
+
+.nav .left-area span {
+  font-size: 2.3rem !important;
+  cursor: pointer;
+}
+
+/* MEGA MENU ------------------------------------------------- */
+.nav .right-area .mega-menu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  min-width: 450px;
+  padding: 2rem 0 1rem;
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 3px 2px 10px #000;
+}
+
+.nav .right-area .main-menu li:hover .mega-menu {
+  display: flex;
+}
+
+.nav .right-area .mega-menu ul {
+  flex: 1;
+}
+
+.nav .right-area .mega-menu ul li a {
+  display: block;
+  width: 100%;
+  padding: 1.1rem 3rem;
+  color: var(--black);
+  transition: all 0.3s;
+}
+
+.nav .right-area .mega-menu ul li a:hover {
+  background-color: #f4f4f4;
+}
+
+/* MOBILE MENU ------------------------------------------------- */
+.nav .mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -200%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0;
+  z-index: 100;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.nav .mobile-menu .mobile-menu-show {
+  min-width: 100px;
+  width: 280px;
+  height: 100%;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+}
+
+.nav .mobile-menu .mobile-menu-show .su-section {
+  margin-bottom: 1rem;
+  background-color: var(--white);
+}
+
+.nav .mobile-menu .mobile-menu-show .mobile-menu-link {
+  display: block;
+  padding: 1.6rem;
+  color: var(--black);
+  border-bottom: 1px solid #f4f4f4;
+  transition: all 0.3s;
+}
+
+.nav .mobile-menu .mobile-menu-show .mobile-menu-link:hover {
+  background-color: #f6f6f6;
+}
+
+.nav .mobile-menu .mobile-menu-show .mobile-menu-header .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.nav .mobile-menu .mobile-menu-show .mobile-menu-header .title img {
+  max-width: 110px;
+}
+
+.nav .mobile-menu .mobile-menu-show .mobile-menu-header .title i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.nav .mobile-menu .mobile-menu-show .mobile-menu-header ul li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.6rem;
+  color: var(--black);
+}
+
+.nav .mobile-menu .mobile-menu-show .mobile-menu-footer ul li a {
+  display: block;
+  padding: 1.6rem;
+  color: var(--black);
+}
+
+/* SEARCH BAR ------------------------------------------------- */
+.nav .search-bar {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.nav .search-bar form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav .search-bar form i {
+  font-size: 2.8rem;
+  cursor: pointer;
+}
+
+/* SHOPING LIST ------------------------------------------------- */
+.nav .shoping-list {
+  position: fixed;
+  top: 0;
+  left: -200%;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 110;
+  transition: all 0.4s;
+}
+
+.nav .shoping-list .shoping-list-show {
+  position: absolute;
+  left: 0;
+  width: 500px;
+  min-width: 100px;
+  height: 100%;
+  background-color: var(--light);
+  overflow-y: scroll;
+}
+
+.nav .shoping-list .shoping-list-show .shoping-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  margin-bottom: 1rem;
+  background-color: var(--white);
+}
+
+.nav .shoping-list .shoping-list-show .shoping-list-header h6 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.nav .shoping-list .shoping-list-show .shoping-list-header i {
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.nav .shoping-list .shoping-list-show .shoping-list-empty {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.nav .shoping-list .shoping-list-show .shoping-list-empty img {
+  max-width: 75px;
+}
+
+.nav .shoping-list .shoping-list-show .shoping-list-empty p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.nav .shoping-list .shoping-list-show .shoping-list-empty a {
+  display: block;
+  padding: 1.5rem 3rem;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+  .nav .mobile-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .right-area ul {
+    justify-content: center !important;
+  }
+
+  nav .right-area a i {
+    font-size: 3rem !important;
+  }
+
+  nav .right-area a::before {
+    display: none;
+  }
+
+  .nav .right-area .mega-menu {
+    display: none !important;
+  }
+
+  nav .middle-area {
+    display: block !important;
+  }
+}
+
+@media (max-width: 576px) {
+  nav .middle-area {
+    display: none !important;
+  }
+
+  .nav .mobile-menu .mobile-menu-show {
+    width: 100%;
+  }
+
+  .nav .shoping-list .shoping-list-show {
+    width: 100%;
+  }
+}
+
+/* E N D    N A V B A R    S T Y L E */
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* S T A R T    F O O T E R    S T Y L E */
+
+/* FOOTER HELP ------------------------------------------------- */
+.footer .footer-help {
+  background-color: #997adb;
+  color: var(--white);
+}
+
+.footer .footer-help h4 {
+  font-size: 2rem;
+}
+
+.footer .footer-help h5 {
+  font-size: 1.8rem;
+}
+
+.footer .footer-help a {
+  color: #feaebb;
+}
+
+.footer .footer-help .side-icon i {
+  width: 50px;
+  height: 50px;
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.footer-copyright .payment img {
+  max-width: 62px;
+}
+
+/* E N D    F O O T E R    S T Y L E */
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* S T A R T    G O    U P    S T Y L E */
+.go-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 4rem;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 50;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.up.show {
+  bottom: 30px;
+}
+/* E N D    G O    U P    S T Y L E */
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* S T A R T    S W I P E R    S T Y L E */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiped-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiped-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* E N D    S W I P E R    S T Y L E */

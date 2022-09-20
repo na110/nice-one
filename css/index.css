@@ -1,0 +1,109 @@
+/* S T A R T    M A I N    S T Y L E */
+.main {
+  margin: 4rem 0;
+  overflow: hidden;
+}
+
+.main section {
+  margin-bottom: 4rem;
+  overflow-x: hidden;
+}
+
+/* BANER SECTION ------------------------------------------------- */
+.main .baner-section img {
+  border-radius: 4px;
+}
+
+/* BANER ITEMS ------------------------------------------------- */
+.main .baner-items-section .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.main .baner-items-section img {
+  max-width: 100%;
+}
+
+/* PRODUCTS SECTION ------------------------------------------------- */
+.main .products-section .prodduct {
+  display: block;
+  text-align: right;
+}
+
+.main .products-section .prodduct .product-img {
+  position: relative;
+}
+
+.main .products-section .prodduct .product-img img {
+  display: block;
+  width: 100%;
+}
+
+.main .products-section .prodduct .product-img span {
+  background-color: #ff375d;
+  border-radius: 6px;
+  bottom: 1rem;
+  color: var(--white);
+  font-size: 11px;
+  padding: 3px 8px;
+  position: absolute;
+  right: 1rem;
+  z-index: 1;
+}
+
+.main .products-section .prodduct .product-title {
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+}
+
+.main .products-section .prodduct .product-title h4 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main .products-section .prodduct .product-title h3 {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.main .products-section .prodduct .product-title .product-price {
+  font-size: 1.5rem;
+  align-items: center;
+  color: #cf142b;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.main .products-section .prodduct .product-title .product-price .discount {
+  background-color: rgba(207, 20, 43, 0.11);
+  direction: ltr;
+  font-family: din-next-lt-w23-bold;
+  font-size: 11px;
+  padding: 3px 8px;
+  text-align: center;
+}
+
+.main .products-section .prodduct .product-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  color: #997adb;
+  cursor: pointer;
+}
+
+.main .brands-section .brand img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+/* E N D    M A I N    S T Y L E */

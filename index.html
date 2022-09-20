@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسوق جميع منتجات الجمال أونلاين | نايس ون السعودية</title>
+
+  <!-- G O O G L E    F O N T -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet" />
+  <!-- F O N T    A W E S O M E -->
+  <link rel="stylesheet" href="css/all.css" />
+  <!-- B O O T S T R A P -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- S W I P E R    C S S -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- N O R M A L I Z E -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- C U S T O M    C S S    F I L E -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- I N D E X    C S S    F I L E -->
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <!-- S T A R T    H E A D E R    A R E A -->
+  <header class="header d-none d-lg-block py-5 bg-white" id="header">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- HEADER LOGO -->
+        <div class="right-area col-2">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+
+        <!-- HEADER SEARCH -->
+        <div class="middle-area col-7">
+          <form>
+            <input class="fs-3 form-control p-3" type="search" name="search" id="search"
+              placeholder="مالذي تبحث عنه ؟" />
+          </form>
+        </div>
+
+        <!-- HEADER QUALITY -->
+        <div class="left-area col-3 d-flex align-items-center justify-content-center gap-3">
+          <img src="./images/quality.svg" alt="" />
+          <h6 class="fs-4 text-nowrap">موقع المكياج الأول في اليمن</h6>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- E N D    H E A D E R    A R E A -->
+
+  <!-- S T A R T    N A V B A R    A R E A -->
+  <nav class="nav bg-white" id="navbar">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <!-- NAV MAIN MENU -->
+        <div class="right-area col-6 col-sm-3">
+          <ul
+            class="main-menu d-flex gap-2 gap-lg-5 align-items-center justify-content-center justify-content-lg-start">
+            <li>
+              <a class="d-flex align-items-center gap-3 text-nowrap py-4" href="#">
+                <i id="btn-open-mobile-menu" class="fs-2 fa-solid fa-bars"></i>
+                <span class="d-none d-lg-block">جميع الأقسام</span>
+              </a>
+              <!-- M E G A    M E N U -->
+              <div class="mega-menu">
+                <ul class="sub-menu">
+                  <li><a href="./products.html">المكياج</a></li>
+                  <li><a href="./products.html">العطور</a></li>
+                  <li><a href="./products.html">العناية</a></li>
+                  <li><a href="./products.html">الهدايا</a></li>
+                  <li><a href="./products.html">الأظافر</a></li>
+                  <li><a href="./products.html">الأجهزة</a></li>
+                  <li><a href="./products.html">الأم و الطفل</a></li>
+                  <li><a href="./products.html">أدوات اللياقة</a></li>
+                </ul>
+                <ul class="sub-menu">
+                  <li><a href="#">المكياج</a></li>
+                  <li><a href="#">العطور</a></li>
+                  <li><a href="#">العناية</a></li>
+                  <li><a href="#">الهدايا</a></li>
+                  <li><a href="#">الأظافر</a></li>
+                  <li><a href="#">الأجهزة</a></li>
+                  <li><a href="#">الأم و الطفل</a></li>
+                  <li><a href="#">أدوات اللياقة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="d-none d-lg-block">
+              <a class="d-block py-4" href="#">الماركات</a>
+            </li>
+            <li class=" d-lg-none">
+              <a class="logo" href="./index.html">
+                <img src="./images/logo.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- NAV SEARCH -->
+        <div class="middle-area col-7" id="search-nav">
+          <form>
+            <input class="fs-3 form-control p-3" type="search" name="search" id="search"
+              placeholder="مالذي تبحث عنه ؟" />
+          </form>
+        </div>
+
+        <!-- NAV INFO -->
+        <div class="left-area col-6 col-sm-2 d-flex align-items-center justify-content-center gap-4">
+          <span id="btn-open-search-bar" class="d-sm-none"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <span><i class="fa-solid fa-bell"></i></span>
+          <span id="btn-open-shoping-list"><i class="fa-solid fa-bag-shopping"></i></span>
+        </div>
+
+        <!-- M O B I L E    M E N U -->
+        <div class="mobile-menu" id="mobile-menu">
+          <div class="mobile-menu-show">
+            <div class="mobile-menu-header su-section">
+              <div class="title">
+                <img src="./images/logo.png" alt="" />
+                <i id="btn-close-mobile-menu" class="fa-solid fa-xmark"></i>
+              </div>
+              <ul>
+                <li>
+                  <a class="mobile-menu-link" href="./index.html"><i class="fa-solid fa-house"></i> <span>الرئيسية</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-link" href="#"><span>الماركات</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-link" href="#"><span>العروض</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-menu-body su-section">
+              <ul>
+                <li><a class="mobile-menu-link" href="./products.html">الاكثر مبيعاً</a></li>
+                <li><a class="mobile-menu-link" href="./products.html"> العناية بالبشرة</a></li>
+                <li><a class="mobile-menu-link" href="./products.html">العناية بالشعر</a></li>
+                <li><a class="mobile-menu-link" href="./products.html">المكياج</a></li>
+                <li><a class="mobile-menu-link" href="./products.html">الاجهزة</a></li>
+                <li><a class="mobile-menu-link" href="./products.html">منتجات الاطفال</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu-footer su-section">
+              <ul>
+                <li><a class="mobile-menu-link" href="#">خدمة العملاء</a></li>
+                <li><a class="mobile-menu-link" href="#">سياسة الاستبدال والارجاع</a></li>
+                <li><a class="mobile-menu-link" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- NAV SEARCH BAR -->
+        <div class="search-bar" id="search-bar">
+          <form>
+            <input class="fs-3 form-control p-3" type="search" name="search" id="search"
+              placeholder="مالذي تبحث عنه ؟" />
+            <i id="btn-close-search-bar" class="fa-solid fa-xmark"></i>
+          </form>
+        </div>
+
+        <!-- SHOPING LIST -->
+        <div class="shoping-list" id="shoping-list">
+          <div class="shoping-list-show">
+            <div class="shoping-list-header">
+              <h6>سلة التسوق</h6>
+              <i id="" class="fa-solid fa-xmark btn-close-shoping-list"></i>
+            </div>
+            <div class="shoping-list-body"></div>
+            <div class="shoping-list-empty">
+              <img src="./images/shoping-list.png" alt="" />
+              <p>سلة التسوق فارغه!</p>
+              <a class="btn-close-shoping-list" href="#">ابدأ التسوق</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- E N D    N A V B A R    A R E A -->
+
+  <!-- S T A R T    M A I N   A R E A -->
+  <main class="main" id="main">
+    <!-- S T A R T    B A N E R    S E C T I O N -->
+    <section class="baner-section">
+      <div class="container">
+        <img src="./images/baner/baner-one.png" alt="" />
+      </div>
+    </section>
+    <!-- E N D    B A N E R    S E C T I O N -->
+
+    <!-- S T A R T    B A N E R    S E C T I O N -->
+    <section class="baner-section">
+      <div class="container">
+        <img src="./images/baner/baner-two.gif" alt="" />
+      </div>
+    </section>
+    <!-- E N D    B A N E R    S E C T I O N -->
+
+    <!-- S T A R T    B R A N D S    S E C T I O N -->
+    <section class="brands-section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="brand col-4 d-flex justify-content-center">
+            <img src="./images/brands/test.png" alt="">
+          </div>
+          <div class="brand col-4 d-flex justify-content-center">
+            <img src="./images/brands/test.png" alt="">
+          </div>
+          <div class="brand col-4 d-flex justify-content-center">
+            <img src="./images/brands/test.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D    B R A N D S    S E C T I O N -->
+
+    <!-- S T A R T    P R O D U C T S    S E C T I O N -->
+    <section class="products-section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fs-3 fw-bold">الأكثر مبيعاً </h2>
+          <a class="fw-bold text-black" href="#">عرض الكل</a>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="popular-products"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D    P R O D U C T S    S E C T I O N -->
+
+
+    <!-- S T A R T    P R O D U C T S    S E C T I O N -->
+    <section class="products-section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fs-3 fw-bold"> العناية بالبشرة</h2>
+          <a class="fw-bold text-black" href="#">عرض الكل</a>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper show" id="women-perf"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D    P R O D U C T S    S E C T I O N -->
+
+
+    <!-- S T A R T    P R O D U C T S    S E C T I O N -->
+    <section class="products-section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="fs-3 fw-bold">العناية بالشعر</h2>
+          <a class="fw-bold text-black" href="#">عرض الكل</a>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="man-perf"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <!-- E N D    P R O D U C T S    S E C T I O N -->
+
+    <!-- S T A R T    B A N E R    I T E M S    S E C T I O N -->
+    <section class="baner-items-section">
+      <div class="container">
+        <img src="./images/baner/banner-item.png" alt="" />
+        <img src="./images/baner/banner-item.png" alt="" />
+        <img src="./images/baner/banner-item.png" alt="" />
+      </div>
+    </section>
+    <!-- E N D    B A N E R    I T E M S    S E C T I O N -->
+
+    
+  </main>
+  <!-- E N D    M A I N   A R E A -->
+
+  <!-- S T A R T    F O O T E R    A R E A -->
+  <footer class="footer">
+    <!-- FOOTER HELP -->
+    <div class="footer-help py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 d-flex gap-3 flex-column my-3 ps-4">
+            <h4>هل تحتاج مساعدة ؟</h4>
+            <p>يمكنك الحصول على المساعدة من خلال وسائل المساعدة المختلفة</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center gap-3 my-3">
+            <div class="side-icon">
+              <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <div class="side-text">
+              <h5>مركز المساعدة</h5>
+              <a href="mailto:help.niceonesa.com">help.niceonesa.com</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center gap-3 my-3">
+            <div class="side-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="side-text">
+              <h5>البريد الألكترونى</h5>
+              <a href="mailto:cs@niceonesa.com">cs@niceonesa.com</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center gap-3 my-3">
+            <div class="side-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="side-text">
+              <h5>الأتصال المباشر</h5>
+              <a href="#">0092 0033 385</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER INFO -->
+    <div class="footer-info py-5">
+      <div class="container">
+        <div class="row justify-content-center justify-content-md-end">
+          <div class="popular-categories col-4 d-none d-md-block">
+            <h3 class="fs-2 fw-bold mb-5">أشهر التصنيفات</h3>
+            <ul>
+              <li><a class="nav-link mb-3" href="#">القسم الاول</a></li>
+              <li><a class="nav-link mb-3" href="#">القسم الثاني</a></li>
+              <li><a class="nav-link mb-3" href="#">القسم الثااث</a></li>
+              <li><a class="nav-link mb-3" href="#">القسم الرابع</a></li>
+            </ul>
+          </div>
+          <div class="nice-one col-4 d-none d-md-block">
+            <h3 class="fs-2 fw-bold mb-5">نايس ون</h3>
+            <ul>
+              <li><a class="nav-link mb-3" href="#">الشروط والأحكام</a></li>
+              <li>
+                <a class="nav-link mb-3" href="#">سياسة الإستبدال والإسترجاع</a>
+              </li>
+              <li><a class="nav-link mb-3" href="#">الخصوصية</a></li>
+            </ul>
+          </div>
+          <div class="social-media col-4 text-center text-md-end">
+            <h3 class="fs-2 fw-bold mb-5">تواصل معنا</h3>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+              <a class="nav-link py-3 px-4 bg-dark bg-opacity-10 rounded-2" href="#"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a class="nav-link py-3 px-4 bg-dark bg-opacity-10 rounded-2" href="#"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a class="nav-link py-3 px-4 bg-dark bg-opacity-10 rounded-2" href="#"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER COPYRIGHT -->
+    <div class="footer-copyright border-top border-1 py-5">
+      <div class="container">
+        <div class="row justify-content-center justify-content-lg-between  align-items-center g-4">
+          <div class="payment col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
+            <img src="./images/payment/2109ef5.png" alt="" />
+            <img src="./images/payment/4f2cb8e.png" alt="" />
+            <img src="./images/payment/7508543.png" alt="" />
+            <img src="./images/payment/8d41a4b.svg" alt="" />
+          </div>
+          <div class="copyright col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+            <p>2022 © جميع الحقوق محفوظة لنايس ون</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+  <!-- E N D    F O O T E R    A R E A -->
+
+  <!-- GO UP -->
+  <span class="go-up" id="go-up"><i class="fa-solid fa-angle-up"></i></span>
+
+  <!-- B O O T S T R A P -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- J Q U E R Y -->
+  <!-- <script src="js/query-3.6.1.min.js"></script> -->
+  <!-- S W I P E R    J S -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- C U S T O M    J S    F I L E -->
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
